@@ -120,18 +120,7 @@ function getItemFromUser() {
 	var newName = document.getElementById("name").value;
 	var newPrice = parseFloat(document.getElementById("price").value);
 	var item = {name: newName, price: newPrice};
-	list.push(item);
-	var divSection = document.getElementById("shopping_cart");
-	if(divSection === undefined || divSection === null) {
-		divSection = document.createElement("div");
-		divSection.id = "shopping_cart";
-	}
-	var para = document.createElement("p");
-	var node = document.createTextNode(item.name+"\t$"+item.price.toFixed(2)+"\n");
-	para.appendChild(node);
-	divSection.appendChild(para);
 
-
-	// addItemToList(item);
+	addItemToList(item);
 	updateTotal();
 }
