@@ -1,0 +1,81 @@
+#article {
+	margin: 10px;
+	color: #D4A46A;
+}
+
+.cat-pic {
+	height: 300px;
+	width: auto;
+	float: left;
+	margin: 10px;
+}
+
+.cat-pic:hover {
+	transform: scale(1.2);
+}
+
+#leopard2 {
+  animation: pulse 10s;
+}
+
+#leopard2:active {
+	animation: repulse 10s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes repulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+body {
+	background: grey;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	background: #323875;
+	color: #7D82B0;
+	top: 0;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	color: #323875;
+	background: #AA7639;
+}
+
+a {
+	color: #D4A46A;
+}
+
+a:active {
+	color: #AA9D39;
+}
+
+.bs-sidebar .nav > .active > ul {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.bs-sidebar .nav > .active ul {
+   background: #535993;
+}

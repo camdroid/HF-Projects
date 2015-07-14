@@ -1,0 +1,64 @@
+body {
+	height: 1000px;
+	/*width: 1000px;*/
+}
+
+#num1 > p {
+	padding: 10px;
+	border: medium dashed green;
+	text-align: center;
+	margin: 13px;
+	height: 10em;
+    box-shadow: 0 10px 6px -6px #777;
+    background: repeating-radial-gradient(#b8e7bf, #b8e7bf 5px, white 5px, white 10px);
+    padding-right: 10px;
+}
+
+#num1 > p::after {
+	font-family: 'Playball', cursive;
+	content: "This is in the after tag";
+}
+
+#num1 {
+	float: left;
+}
+
+#num2 > p {
+	padding: 30px;
+	border: thick inset blue;
+	margin: auto;
+	width: 400px;
+	direction: rtl;
+	background: linear-gradient(to top, #8dd2d9 , #58c0c7);
+}
+
+#num2 {
+	float: left;
+}
+
+#num3 > p {
+	padding: 0px;
+	border: 30px solid transparent;
+	border-image:url(http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;
+	clear: left;
+	margin: 32px;
+	z-index: 5;
+	position: relative;
+	top: 50%;
+	left: 5%;
+}
+
+#num4 > p {
+	border: 10px groove #F0E382;
+	text-align: right;
+}
+
+#num4 {
+	position: fixed;
+}
+
+.header {
+  margin: 0 -100%;
+  padding: 0.5em 100%;
+  background: rgba(255,0,0,.5);
+}

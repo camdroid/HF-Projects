@@ -1,0 +1,32 @@
+h1 {
+	color: orange;
+}
+
+p {
+	margin: 0 auto;
+	width: 300px;
+}
+
+div > p {
+	color: green; 
+	font-family: "Helvetica";
+}
+
+.buffers {
+	color: blue;
+	font-weight: bold;
+}
+
+#buffer-intro {
+	color: blue;
+	font-size: 10;
+	font-weight: bold;
+}
+
+.myclass {
+	color: gray;
+}
+
+.object, #fluffy {
+	background-color: yellow;
+}
