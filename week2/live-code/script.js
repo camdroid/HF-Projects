@@ -6,8 +6,8 @@ app.config(function($routeProvider) {
 		templateUrl: 'view1.html',
 		controller: 'serviceCtrl'
 	})
-	.when('/view2', {
-		templateUrl: 'view2.html',
+	.when('/profile', {
+		templateUrl: 'profile.html',
 		controller: 'nameDisplayer'
 	});
 });
