@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<script type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<script src="script.js"></script>
+	</head>
+	<body ng-app="photo-grid-app">
+		<header> Summer 2015 </header>
+
+		<div class="grid" ng-controller="MainCtrl">
+			<div class="row">
+				<photo-box></photo-box>
+
+				<div class="figure">
+					<img src="res/images/computer-security.jpg">
+					<p class="caption">Focused on computer security</p>
+				</div>
+
+				<div class="figure">
+					<img src="res/images/duo.png">
+					<p class="caption">Working at Duo after bootcamp</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="figure">
+					<img src="res/images/bell-tower.jpg">
+					<p class="caption">Overlooking Reykjavik</p>
+				</div>
+
+				<div class="figure">
+					<img src="res/images/plane.jpg">
+					<p class="caption">Crashed Navy plane near Skaftafell</p>
+				</div>
+
+				<div class="figure">
+					<img src="res/images/shimbashi.jpg">
+					<p class="caption">Shimbashi Station in Tokyo</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="figure">
+					<img src="res/images/salmon-fishing.jpg">
+					<p class="caption">Salmon Fishing in Alaska</p>
+				</div>
+
+				<div class="figure">
+					<img src="res/images/marina.jpg">
+					<p class="caption">Celebrating a friend's engagement!</p>
+				</div>
+
+				<div class="figure">
+					<img src="res/images/han-river.jpg" alt="Seoul, South Korea">
+					<p class="caption">Biking along the Han River in Seoul</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p> Cam Herringshaw </p>
+		</div>
+	</body>
+</html>
