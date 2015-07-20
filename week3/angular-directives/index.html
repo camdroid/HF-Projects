@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="myapp">
 
-  <head>
-    <meta charset="utf-8" />
-    <title>AngularJS Plunker</title>
-    <script>document.write('<base href="' + document.location + '" />');</script>
-    <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.7/angular.js" data-semver="1.2.7"></script>
-    <script src="script.js"></script>
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<title>PhotoGrid</title>
+		<script>document.write('<base href="' + document.location + '" />');</script>
+		<link rel="stylesheet" href="main.css" />
+		<script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.7/angular.js" data-semver="1.2.7"></script>
+		<script src="script.js"></script>
+	</head>
 
-  <body ng-controller="MainCtrl">
-    <hello-world/>
-  </body>
-
+	<body ng-controller="MainCtrl" ng-cloak>
+		<div ng-repeat='image in my_images'>
+			<photo-box source="res/images/{{image.src}}" cap="{{image.cap}}"></photo-box>
+		</div>
+	</body>
 </html>
